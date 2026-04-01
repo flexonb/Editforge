@@ -29,6 +29,7 @@ import { ScreenRecorder } from './tools/ScreenRecorder';
 import { AudioVisualizer } from './tools/AudioVisualizer';
 import { DatabaseManager } from './tools/DatabaseManager';
 import { APITester } from './tools/APITester';
+import { PortfolioBuilder } from './tools/PortfolioBuilder';
 
 interface MainWorkspaceProps {
   currentTool: string;
@@ -98,6 +99,8 @@ export function MainWorkspace({ currentTool, onToolChange }: MainWorkspaceProps)
         return <DatabaseManager />;
       case 'api-tester':
         return <APITester />;
+      case 'portfolio-builder':
+        return <PortfolioBuilder />;
       default:
         return <Dashboard onToolChange={onToolChange} />;
     }
