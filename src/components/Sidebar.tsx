@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Image, Music, Video, FileText, Palette, Download, Quote, Search, Code, Mic, Grid3X3, Sticker, Calculator, Camera, Hash, QrCode, Compass, Zap, Cpu, Globe, Calendar, Clock, Scissors, Type, Layers, Filter, Volume2, AudioWaveform as Waveform, FileVideo, ImageIcon, Crop, RotateCw, Sliders, Headphones, FileAudio, Maximize, Minimize, SkipBack, SkipForward, Database, Settings, Terminal, Smartphone, Wifi, X } from 'lucide-react';
+import { Home, Image, Music, Video, FileText, Palette, Download, Quote, Search, Code, Mic, Grid3X3, Sticker, Calculator, Camera, Hash, QrCode, Compass, Zap, Cpu, Globe, Calendar, Clock, Scissors, Type, Layers, Filter, Volume2, AudioWaveform as Waveform, FileVideo, ImageIcon, Crop, RotateCw, Sliders, Headphones, FileAudio, Maximize, Minimize, SkipBack, SkipForward, Database, Settings, Terminal, Smartphone, Wifi, X, User } from 'lucide-react';
 
 interface SidebarProps {
   currentTool: string;
@@ -46,6 +46,7 @@ const tools = [
   { id: 'audio-visualizer', name: 'Audio Visualizer', icon: Waveform, category: 'expert', keywords: ['visualize', 'spectrum', 'frequency', 'wave'] },
   { id: 'database-manager', name: 'Database Manager', icon: Database, category: 'expert', keywords: ['database', 'sql', 'table', 'data'] },
   { id: 'api-tester', name: 'API Tester', icon: Globe, category: 'expert', keywords: ['api', 'rest', 'http', 'request', 'test'] },
+  { id: 'portfolio-builder', name: 'Portfolio Builder', icon: User, category: 'tools', keywords: ['portfolio', 'resume', 'cv', 'profile', 'about', 'personal'] },
 ];
 
 const categories = {
